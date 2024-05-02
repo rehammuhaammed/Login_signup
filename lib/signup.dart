@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 
 import 'package:e_kyc/login_page.dart';
 import 'package:flutter/material.dart';
@@ -151,7 +151,7 @@ class SignUpScreen extends StatelessWidget {
         TextButton(onPressed: () {
           Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => LoginPage()), // Replace LoginPage with the actual name of your login page class
+      MaterialPageRoute(builder: (context) => LoginPage()), 
     );
     }, 
     child: Text(
@@ -165,7 +165,7 @@ class SignUpScreen extends StatelessWidget {
   void _showSnackBar(BuildContext context, String message) {
   final snackBar = SnackBar(
     content: Text(message),
-    duration: Duration(seconds: 2), // Adjust the duration as needed
+    duration: Duration(seconds: 2), 
     
   );
   ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -198,28 +198,6 @@ void _validateSignUp(BuildContext context) {
       context,
       MaterialPageRoute(builder: (context) => LoginPage()),
     );
-    // If all validations pass, you can proceed with signup
-    // Example: call a signup function or navigate to the next screen
-  }
-
- //void _showAlert(BuildContext context, String message) {
- //  showDialog(
- //    context: context,
- //    builder: (BuildContext context) {
- //      return AlertDialog(
- //        title: Text("Alert"),
- //        content: Text(message),
- //        actions: <Widget>[
- //          TextButton(
- //            onPressed: () {
- //              Navigator.of(context).pop();
- //            },
- //            child: Text("OK"),
- //          ),
- //        ],
- //      );
- //    },
- //  );
- //}
+   
 
 }
