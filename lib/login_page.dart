@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 
 import 'package:e_kyc/signup.dart';
 import 'package:flutter/material.dart';
@@ -37,8 +37,8 @@ _logo() {
     alignment: Alignment.topLeft,
     child: Image.asset(
       'assets/images/logo.png',
-      width: 100, // Adjust the width as needed
-      height: 100, // Adjust the height as needed
+      width: 100, 
+      height: 100, 
     ),
   );
 }
@@ -112,7 +112,7 @@ _logo() {
         Text("Dont have an account? ",style: TextStyle(color: Colors.white),),
         TextButton(onPressed: () {  Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SignUpScreen()), // Replace LoginPage with the actual name of your login page class
+      MaterialPageRoute(builder: (context) => SignUpScreen()), 
     );
     }, child: Text("Sign Up",
     style: TextStyle(color: Color(0xFFEE7A0A))))
@@ -122,7 +122,7 @@ _logo() {
   void _showSnackBar(BuildContext context, String message) {
   final snackBar = SnackBar(
     content: Text(message),
-    duration: Duration(seconds: 2), // Adjust the duration as needed
+    duration: Duration(seconds: 2), 
     
   );
   ScaffoldMessenger.of(context).showSnackBar(snackBar);
